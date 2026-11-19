@@ -1,14 +1,587 @@
+<!doctype html>
+<!-- Portfolio of Ami Samyra Ouedraogo: CS / AI engineering version (main), served at amisamyra99.github.io/.
+     Shares assets/site.css and assets/site.js with the other version; French text sits in data-fr attributes.
+     Edit content here; edit look and behaviour in assets/. -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://amisamyra.goatcounter.com https://formspree.io; img-src 'self' data: https://amisamyra.goatcounter.com; style-src 'self' 'unsafe-inline'; font-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action https://formspree.io">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Ami Samyra Ouedraogo · Data Scientist & Engineer</title>
+<meta name="description" content="Computer science engineer and data scientist in Germany. I build, deploy and run data and AI applications end to end.">
+<meta property="og:title" content="Ami Samyra Ouedraogo · Data Scientist & Engineer">
+<meta property="og:description" content="Computer science engineer and data scientist. AI applications, pipelines and deployment, from first customer conversation to production.">
+<meta name="theme-color" content="#07090c">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
-    <h1></h1>
-<img class="myImage" src="images/image1.png" alt="">
-<button>Changer d'utilisateur</button>
+<body data-title-fr="Ami Samyra Ouedraogo · Data Scientist & Ingénieure" data-desc-fr="Ingénieure en informatique et data scientist en Allemagne. Je conçois, déploie et fais tourner des applications data et IA de bout en bout.">
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16l4-5 3 3 5-7"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M14 4c3-1 6-1 6-1s0 3-1 6l-7 7-5-5z"/><circle cx="15" cy="9" r="1.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0zM8 21h8"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0M16 4.5a3.5 3.5 0 0 1 0 7M18 13.5a7 7 0 0 1 4 6.5"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24"><path d="M10 14l-7-3 2-2 9 1 5-5a2 2 0 0 1 3 3l-5 5 1 9-2 2-3-7-3 3v3l-2 1-1-4-4-1 1-2h3z"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="15" y="15" width="6" height="6" rx="1.5"/><path d="M6 9v4a2 2 0 0 0 2 2h7"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Home"><span class="mono">AS</span><span class="full">Ami Samyra Ouedraogo</span></a>
+    <nav class="pills" id="pills" aria-label="Main">
+      <a href="#home" data-p="home" data-fr="Accueil">Home</a>
+      <a href="#experience" data-p="experience" data-fr="Parcours">Experience</a>
+      <a href="#projects" data-p="projects" data-fr="Projets">Projects</a>
+      <a href="#certificates" data-p="certificates" data-fr="Certificats">Certificates</a>
+      <a href="#events" data-p="events" data-fr="Événements">Events</a>
+      <a href="#skills" data-p="skills" data-fr="Compétences">Skills</a>
+      <a href="#about" data-p="about" data-fr="À propos">About</a>
+    </nav>
+    <div class="socials">
+      <button class="lang" id="lang" type="button" aria-label="Switch language / Changer de langue"><span data-l="en" class="on">EN</span><span data-l="fr">FR</span></button>
+      <a class="ibtn hide-sm" href="https://medium.com/@IamAmi" target="_blank" rel="noopener noreferrer" aria-label="Medium blog"><svg class="i"><use href="#i-pen"/></svg></a>
+      <a class="ibtn hide-sm" href="mailto:ouedraogoamisamyra@gmail.com" aria-label="Email"><svg class="i"><use href="#i-mail"/></svg></a>
+      <a class="ibtn" href="https://github.com/amisamyra99" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="i"><use href="#i-gh"/></svg></a>
+      <a class="ibtn" href="https://www.linkedin.com/in/ouedraogo-ami-samyra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="i"><use href="#i-in"/></svg></a>
+      <button class="ibtn menu" id="menu" type="button" aria-label="Open menu" aria-expanded="false"><svg class="i"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ================= HOME ================= -->
+<section class="page" id="p-home">
+  <div class="layout">
+    <div>
+      <div class="hero sec" id="home-overview">
+        <div>
+          <div class="status"><span class="dot"></span><span data-fr="Ouverte aux postes en remote, hybride et en conseil">Open to remote, hybrid and consulting roles</span></div>
+          <h1 data-fr="Bonjour, je suis Ami Samyra">Hi, I'm Ami Samyra</h1>
+          <p class="role" data-fr="Data Scientist &amp; Ingénieure en informatique">Data Scientist &amp; Computer Science Engineer</p>
+          <p class="lede" data-fr="Je conçois, déploie et fais tourner des applications data et IA de bout en bout. Depuis près de trois ans en Allemagne, je transforme des idées en logiciels qui fonctionnent : je parle aux personnes qui vont les utiliser, j'écris le code, je construis les pipelines et je mets en production.">I build, deploy and run data and AI applications end to end. For nearly three years in Germany, I've turned ideas into working software: I talk to the people who will use it, write the code, build the pipelines and ship it to production.</p>
+          <div class="btns">
+            <a class="btn primary" href="#projects"><span data-fr="Voir mes projets">Explore my work</span> <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn" href="#about"><span data-fr="Mon histoire">My story</span></a>
+          </div>
+        </div>
+        <div class="viz"><div class="glow" aria-hidden="true"></div><canvas id="net" aria-hidden="true"></canvas><img class="portrait" src="assets/img/me/portrait.jpg" alt="Portrait of Ami Samyra Ouedraogo" width="900" height="1003"></div>
+      </div>
+
+      <div class="sec" id="home-metrics" style="margin-top:24px">
+        <div class="metrics">
+          <div class="metric"><div class="mi b-teal"><svg class="i"><use href="#i-bag"/></svg></div><b data-fr="~3 ans">~3 years</b><span data-fr="IA et data en entreprise, en Allemagne">AI and data engineering in Germany</span></div>
+          <div class="metric"><div class="mi b-amber"><svg class="i"><use href="#i-rocket"/></svg></div><b>13</b><span data-fr="Projets livrés, du jeu vidéo à l'IA">Projects shipped, from games to AI</span></div>
+          <div class="metric"><div class="mi b-violet"><svg class="i"><use href="#i-cap"/></svg></div><b data-fr="Ingénieure">Engineer</b><span data-fr="Diplôme d'ingénieur informatique, data science">Computer science degree, data science</span></div>
+          <div class="metric"><div class="mi b-sky"><svg class="i"><use href="#i-award"/></svg></div><b>5</b><span data-fr="Certificats, dont deux avec la mention A+">Certificates, two with A+ grade</span></div>
+        </div>
+      </div>
+
+      <div class="sec block" id="home-how">
+        <h2 class="stitle"><span class="sico" style="color:var(--teal)"><svg class="i"><use href="#i-spark"/></svg></span><span data-fr="Ma façon de travailler">How I work</span></h2>
+        <div class="focus">
+          <div class="fcard"><span class="badge b-teal" data-fr="Responsabilité">Ownership</span><h3 data-fr="De la première discussion à la production">From first conversation to production</h3><p data-fr="J'aime être responsable d'un projet : comprendre le besoin du client, définir la solution avec l'équipe, la construire et la faire vivre après la mise en production.">I like being responsible for a project: understanding what the customer needs, shaping the solution with the team, building it and keeping it running after launch.</p></div>
+          <div class="fcard"><span class="badge b-amber" data-fr="Développement">Engineering</span><h3 data-fr="Développer, déployer, automatiser">Develop, deploy, automate</h3><p data-fr="Applications web et API, modèles de machine learning, pipelines de build et de déploiement avec Azure Pipelines, recherche vectorielle et applications LLM.">Web apps and APIs, machine learning models, build and deployment pipelines with Azure Pipelines, vector search and LLM applications.</p></div>
+          <div class="fcard"><span class="badge b-violet" data-fr="Conseil">Consulting</span><h3 data-fr="Traduire un besoin métier en solution technique">Turn business needs into technical solutions</h3><p data-fr="Je fais le lien entre les équipes métier et techniques. Ma formation en économie m'aide à comprendre les coûts, les priorités et ce qui compte vraiment pour le client.">I connect business and technical teams. My economics studies help me understand costs, priorities and what really matters to the customer.</p></div>
+          <div class="fcard"><span class="badge b-sky" data-fr="Remote et mobilité">Remote &amp; travel-ready</span><h3 data-fr="Concentrée à distance, présente quand il faut">Focused remotely, on site when it counts</h3><p data-fr="Je suis plus productive en remote, avec une communication claire et régulière avec l'équipe. Et je me déplace volontiers chez les clients et les équipes, partout où le projet l'exige.">I do my most productive work remotely, with clear and regular communication with the team. And I'm happy to travel to customers and teams wherever the project needs me.</p></div>
+        </div>
+      </div>
+
+      <div class="sec block" id="home-promise">
+        <div class="pledge">
+          <h2 data-fr="Je ne coche peut-être pas 100 % des cases de votre offre.">I may not tick 100% of the boxes on your job description.</h2>
+          <div>
+            <p data-fr="Mais j'apprends vite, je prends mes responsabilités et, quand le travail a du sens et que je me sens respectée, je m'engage complètement. Si vous cherchez quelqu'un dans qui investir, quelqu'un qui va se donner pour votre entreprise, vous avez trouvé votre candidate.">But I learn fast, I take ownership, and when the work matters and I feel respected, I commit completely. If you're looking for someone to invest in, someone who will give herself to your company, you've found your candidate.</p>
+            <p data-fr="<strong style='color:var(--fg)'>Donnez-moi un vrai défi. Je trouverai le chemin pour le relever, et vous ne serez pas déçus.</strong>"><strong style="color:var(--fg)">Give me a real challenge. I'll find a way through it, and you won't be disappointed.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="toc" data-for="home"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#home-overview" data-fr="Aperçu">Overview</a><a href="#home-metrics" data-fr="Chiffres clés">Key metrics</a><a href="#home-how" data-fr="Ma façon de travailler">How I work</a><a href="#home-promise" data-fr="Mon engagement">My promise</a></aside>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="page" id="p-experience">
+  <div class="ph"><span class="badge b-amber"><svg class="i"><use href="#i-bag"/></svg><span data-fr="Parcours">Experience</span></span>
+    <h1 data-fr="Expérience &amp; formation">Experience &amp; Education</h1>
+    <p data-fr="Trois ans d'IA et de data en entreprise en Allemagne, un stage de recherche en machine learning, et une formation d'ingénieure complétée par l'économie.">Three years of industry AI and data work in Germany, a machine learning research internship, and an engineering education completed by economics.</p></div>
+  <div class="layout">
+    <div class="tl">
+      <p class="tlabel" data-fr="Expérience professionnelle">Work experience</p>
+      <article class="xcard sec" id="x-intershop">
+        <div class="xh"><h3><span data-fr="Étudiante salariée, ingénierie IA">Working Student, AI Engineering</span> <span class="org">· Intershop Communications AG</span></h3><span class="when" data-fr="Nov. 2023 – Sept. 2026">Nov 2023 – Sep 2026</span></div>
+        <p class="where" data-fr="Allemagne · équipe Product Lifecycle, puis DevOps, Produit et IA">Germany · Product Lifecycle team, then DevOps, Product &amp; AI</p>
+        <ul>
+          <li data-fr="Développement de <strong>DocuBot</strong>, un chatbot RAG basé sur LangChain, intégré à Microsoft Teams puis migré vers la plateforme interne d'agents IA">Built <strong>DocuBot</strong>, a RAG chatbot on LangChain, integrated into Microsoft Teams and later migrated to the company's internal AI agent platform</li>
+          <li data-fr="Contribution clé aux chatbots des boutiques en ligne (Intershop Agent Builders) et au chatbot du site de l'entreprise">Key contributor to chatbots for online stores (Intershop Agent Builders) and to the company website chatbot</li>
+          <li data-fr="Pipeline d'indexation automatisé hebdomadaire pour la base de connaissances, intégration d'Azure Search et conception des structures de données avec le Support, le Marketing et l'Engineering">Built an automated weekly indexing pipeline for the knowledge base, integrated Azure Search and designed data structures with Support, Marketing and Engineering</li>
+          <li data-fr="Préparation des données produit et PDF pour des démonstrations client d'agents IA e-commerce">Prepared product data and PDFs for customer demos of e-commerce AI agents</li>
+          <li data-fr="Validation de la qualité des réponses lors des changements de LLM, tests de performance et de charge (Apache JMeter, InfluxDB, Grafana)">Validated answer quality when switching LLMs; ran performance and load tests (Apache JMeter, InfluxDB, Grafana)</li>
+          <li data-fr="Automatisation de processus internes avec n8n, analyse de KPI et rapports d'évaluation technique">Automated internal processes with n8n; analysed KPIs and wrote technical evaluation reports</li>
+        </ul>
+        <p class="xquote" data-fr="« Dès le début, Mme Ouedraogo a fait preuve d'une capacité exceptionnelle à comprendre rapidement de nouveaux sujets. »<span>Lettre de référence, Intershop</span>">"From the very beginning, Ms. Ouedraogo demonstrated an exceptionally quick grasp of new topics."<span>Reference letter, Intershop</span></p>
+        <div class="chips"><span class="chip">LangChain</span><span class="chip">RAG</span><span class="chip">Azure Search</span><span class="chip">Microsoft Teams</span><span class="chip">n8n</span><span class="chip">JMeter · Grafana</span></div>
+      </article>
+      <article class="xcard sec" id="x-elevait">
+        <div class="xh"><h3><span data-fr="Stagiaire Machine Learning">Machine Learning Intern</span> <span class="org">· elevait GmbH &amp; Co. KG</span></h3><span class="when" data-fr="Oct. 2022 – Mars 2023">Oct 2022 – Mar 2023</span></div>
+        <p class="where" data-fr="Dresde, Allemagne · équipe Machine Learning · 6 mois">Dresden, Germany · Machine Learning team · 6 months</p>
+        <p data-fr="Projet « elevait in:docs » : extraire des informations de documents dont la mise en page est connue mais pas totalement fixe.">"elevait in:docs" project: extracting information from documents whose layouts are known but not fully fixed.</p>
+        <ul>
+          <li data-fr="Réduction de l'effort nécessaire pour ajouter une nouvelle mise en page à l'extraction, à partir d'un seul exemple">Reduced the effort to add a new layout to the extraction pipeline, from a single example</li>
+          <li data-fr="Recherche et sélection des approches et des jeux de données de recherche, puis constitution d'un jeu de données à partir de données client réelles">Researched and selected approaches and research datasets, then curated a dataset from real customer data</li>
+          <li data-fr="Implémentation et comparaison des approches : OCR ABBYY, graphes de mise en page avec NetworkX, étiquetage morphologique">Implemented and compared approaches: ABBYY OCR, layout graphs with NetworkX, morphological tagging</li>
+        </ul>
+        <p class="xquote" data-fr="« Elle a toujours obtenu des résultats supérieurs à la moyenne. »<span>Certificat de travail, elevait (traduit de l'allemand)</span>">"She consistently achieved above-average results."<span>Employment reference, elevait (translated from German)</span></p>
+        <div class="chips"><span class="chip">Python</span><span class="chip">ABBYY OCR</span><span class="chip">NetworkX</span><span class="chip">Document AI</span><span class="chip">Scrum</span></div>
+      </article>
+      <article class="xcard past sec" id="x-early">
+        <div class="xh"><h3><span data-fr="Stages d'été">Summer internships</span> <span class="org">· Simac &amp; Glia</span></h3><span class="when" data-fr="Juil. – Août 2019">Jul – Aug 2019</span></div>
+        <p class="where">Tunis</p>
+        <ul>
+          <li data-fr="<strong>Simac</strong> : gestion de la messagerie du site web de l'entreprise (HTML, CSS, JavaScript)"><strong>Simac</strong>: built the messaging management for the company website (HTML, CSS, JavaScript)</li>
+          <li data-fr="<strong>Glia</strong> : fabrication d'un stéthoscope en impression 3D pour un projet de matériel médical open source (Prusa, PrusaSlicer)"><strong>Glia</strong>: built a 3D-printed stethoscope for an open-source medical hardware project (Prusa, PrusaSlicer)</li>
+        </ul>
+      </article>
+
+      <p class="tlabel" data-fr="Formation">Education</p>
+      <article class="xcard edu sec" id="x-esprit">
+        <div class="xh"><h3><span data-fr="Diplôme National d'Ingénieur en informatique">National Engineering Diploma, Computer Science</span> <span class="org">· ESPRIT</span></h3><span class="when" data-fr="Juin 2023">Jun 2023</span></div>
+        <p class="where" data-fr="Tunis, Tunisie · spécialité Data Science · accréditation européenne EUR-ACE">Tunis, Tunisia · Data Science track · EUR-ACE accredited</p>
+        <p data-fr="Cycle d'ingénieur avec spécialisation en data science : génie logiciel, bases de données, machine learning et deep learning, avec de nombreux projets en équipe de 5 à 6 personnes.">Engineering programme specialised in data science: software engineering, databases, machine learning and deep learning, with many team projects of 5–6 people.</p>
+      </article>
+      <article class="xcard edu past sec" id="x-bac">
+        <div class="xh"><h3><span data-fr="Baccalauréat, série D (mathématiques et sciences)">Baccalaureate, Series D (Mathematics &amp; Sciences)</span></h3><span class="when">2017</span></div>
+        <p class="where" data-fr="Ouagadougou, Burkina Faso · mention Bien">Ouagadougou, Burkina Faso · with honours (mention Bien)</p>
+      </article>
+      <article class="xcard edu sec" id="x-hsm">
+        <div class="xh"><h3><span data-fr="Licence (B.A.) International Business &amp; Economics">B.A. International Business &amp; Economics</span> <span class="org">· Hochschule Schmalkalden</span></h3><span class="when" data-fr="Dernière année">Final year</span></div>
+        <p class="where" data-fr="Allemagne · mémoire prévu de janv. à mars 2027">Germany · thesis planned Jan – Mar 2027</p>
+        <p data-fr="Les circonstances m'ont amenée à étudier l'économie, et j'ai appris à l'aimer. Mon mémoire portera sur la façon dont la digitalisation et les paiements transfrontaliers peuvent aider les PME à commercer au sein de la Zone de libre-échange continentale africaine (ZLECAf).">Circumstances led me to study economics, and I learned to love it. My thesis will look at how digitalisation and cross-border payments can help small businesses trade within the African Continental Free Trade Area (AfCFTA).</p>
+      </article>
+    </div>
+    <aside class="toc" data-for="experience"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#x-intershop">Intershop</a><a href="#x-elevait">Elevait</a><a href="#x-early" data-fr="Stages 2019">2019 internships</a><a href="#x-esprit" data-fr="ESPRIT (ingénieur)">ESPRIT (engineering)</a><a href="#x-hsm" data-fr="Schmalkalden (économie)">Schmalkalden (economics)</a><a href="#x-bac" data-fr="Baccalauréat">Baccalaureate</a></aside>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="page" id="p-projects">
+  <div class="ph"><span class="badge b-teal"><svg class="i"><use href="#i-rocket"/></svg><span data-fr="Projets">Projects</span></span>
+    <h1 data-fr="Projets &amp; Portfolio">Projects &amp; Portfolio</h1>
+    <p data-fr="Du jeu vidéo en C aux assistants RAG : 13 projets, seule ou en équipe, qui montrent comment je conçois, développe et livre.">From a video game in C to RAG assistants: 13 projects, solo and in teams, that show how I design, build and deliver.</p></div>
+  <div class="filters" role="group" aria-label="Filter projects">
+    <button type="button" class="on" data-f="all" data-fr="Tous">All</button>
+    <button type="button" data-f="ai" data-fr="IA &amp; ML">AI &amp; ML</button>
+    <button type="button" data-f="data" data-fr="Data &amp; analyse">Data &amp; analytics</button>
+    <button type="button" data-f="software" data-fr="Génie logiciel">Software engineering</button>
+  </div>
+  <div class="layout">
+    <div class="grid">
+
+      <article class="pcard sec" id="pr-docubot" data-k="ai software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0d1420"/><g fill="none" stroke="#38bdf8" stroke-opacity=".6"><rect x="24" y="22" width="70" height="80" rx="6"/><path d="M36 40h46M36 54h46M36 68h30"/></g><path d="M100 62h40" stroke="#93a1ad" stroke-dasharray="3 4"/><g fill="#2dd4bf"><circle cx="160" cy="40" r="5"/><circle cx="182" cy="62" r="5"/><circle cx="160" cy="84" r="5"/><circle cx="204" cy="44" r="5"/><circle cx="204" cy="80" r="5"/></g><path d="M220 62h30" stroke="#93a1ad" stroke-dasharray="3 4"/><rect x="262" y="26" width="116" height="26" rx="13" fill="#a78bfa" opacity=".85"/><rect x="262" y="68" width="96" height="26" rx="13" fill="#fbbf24" opacity=".85"/></svg></div>
+        <div class="ptop"><span class="kind" data-fr="RAG · Intershop">RAG · Intershop</span><span class="pmeta">LangChain · Azure</span></div>
+        <h3 data-fr="DocuBot, assistant RAG pour la documentation">DocuBot, a RAG assistant for documentation</h3>
+        <p data-fr="Un chatbot qui répond aux questions à partir de la documentation de l'entreprise. Basé sur LangChain, intégré à Microsoft Teams, alimenté par un pipeline d'indexation hebdomadaire et Azure Search, puis migré vers la plateforme interne d'agents IA.">A chatbot that answers questions from company documentation. Built on LangChain, integrated into Microsoft Teams, fed by a weekly indexing pipeline and Azure Search, then migrated to the internal AI agent platform.</p>
+        <div class="chips"><span class="chip">LangChain</span><span class="chip">RAG</span><span class="chip">Azure Search</span><span class="chip">Microsoft Teams</span></div>
+        <div class="plinks"><span class="muted" data-fr="Projet d'entreprise · code confidentiel">Company project · code confidential</span></div>
+      </article>
+
+      <article class="pcard sec" id="pr-docai" data-k="ai">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0f1420"/><g fill="none" stroke="#93a1ad" stroke-opacity=".5"><rect x="30" y="14" width="90" height="92" rx="4"/><rect x="155" y="14" width="90" height="92" rx="4"/></g><g fill="#38bdf8" opacity=".7"><rect x="40" y="24" width="50" height="8" rx="2"/><rect x="40" y="40" width="70" height="5" rx="2"/><rect x="40" y="52" width="70" height="5" rx="2"/><rect x="40" y="70" width="70" height="26" rx="2" opacity=".5"/></g><g fill="#fbbf24"><rect x="165" y="24" width="50" height="8" rx="2"/><rect x="165" y="70" width="70" height="26" rx="2" opacity=".6"/></g><g stroke="#2dd4bf" stroke-width="2"><line x1="280" y1="40" x2="330" y2="25"/><line x1="280" y1="40" x2="330" y2="60"/><line x1="330" y1="60" x2="370" y2="90"/><line x1="330" y1="25" x2="370" y2="45"/></g><g fill="#2dd4bf"><circle cx="280" cy="40" r="6"/><circle cx="330" cy="25" r="6"/><circle cx="330" cy="60" r="6"/><circle cx="370" cy="90" r="6"/><circle cx="370" cy="45" r="6"/></g></svg></div>
+        <div class="ptop"><span class="kind" data-fr="IA documentaire · Stage">Document AI · Internship</span><span class="pmeta">Python · ABBYY</span></div>
+        <h3 data-fr="Analyse des mises en page récurrentes">Recurring document layout analysis</h3>
+        <p data-fr="Chez Elevait : repérer les mises en page qui reviennent dans les documents d'entreprise pour que l'extraction d'informations devienne plus fiable et plus rapide. OCR configuré pour des entités précises, structure des documents modélisée en graphes.">At Elevait: detecting layouts that repeat across business documents, so information extraction becomes more reliable and faster. OCR configured for specific entities, document structure modelled as graphs.</p>
+        <div class="chips"><span class="chip">ABBYY OCR</span><span class="chip">NetworkX</span><span class="chip" data-fr="Extraction d'informations">Information extraction</span></div>
+        <div class="plinks"><span class="muted" data-fr="Projet d'entreprise · code confidentiel">Company project · code confidential</span></div>
+      </article>
+
+      <article class="pcard sec" id="pr-churn" data-k="ai software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0d1a1a"/><g fill="#2dd4bf"><rect x="30" y="60" width="26" height="50" rx="4" opacity=".5"/><rect x="70" y="45" width="26" height="65" rx="4" opacity=".6"/><rect x="110" y="70" width="26" height="40" rx="4" opacity=".5"/><rect x="150" y="30" width="26" height="80" rx="4" opacity=".8"/></g><g fill="#fb7185"><rect x="190" y="80" width="26" height="30" rx="4" opacity=".7"/><rect x="230" y="55" width="26" height="55" rx="4" opacity=".9"/></g><path d="M270 90 C300 40, 330 70, 370 25" stroke="#fbbf24" stroke-width="3" fill="none"/><circle cx="370" cy="25" r="5" fill="#fbbf24"/></svg></div>
+        <div class="ptop"><span class="kind" data-fr="ML de bout en bout · Télécoms">End-to-end ML · Telecom</span><span class="pmeta">Python · Django</span></div>
+        <h3 data-fr="Application de prédiction du churn">Customer churn prediction app</h3>
+        <p data-fr="Un modèle qui repère les clients susceptibles de résilier, intégré dans une application web Django : un utilisateur non technique saisit un profil et obtient une prédiction immédiate.">A model that flags customers likely to cancel, built into a Django web app: a non-technical user enters a profile and gets an instant prediction.</p>
+        <div class="chips"><span class="chip">scikit-learn</span><span class="chip">pandas</span><span class="chip">Django</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/telcochurndjangoproject" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-milvus" data-k="ai software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0b1620"/><g fill="#38bdf8" opacity=".35"><circle cx="80" cy="40" r="4"/><circle cx="120" cy="80" r="4"/><circle cx="170" cy="30" r="4"/><circle cx="300" cy="90" r="4"/><circle cx="340" cy="35" r="4"/><circle cx="60" cy="95" r="4"/><circle cx="360" cy="70" r="4"/></g><circle cx="220" cy="60" r="38" fill="none" stroke="#38bdf8" stroke-dasharray="4 5"/><g fill="#38bdf8"><circle cx="200" cy="48" r="6"/><circle cx="238" cy="72" r="6"/><circle cx="232" cy="44" r="6"/></g><circle cx="220" cy="60" r="7" fill="#fbbf24"/></svg></div>
+        <div class="ptop"><span class="kind" data-fr="Ingénierie IA · Recherche vectorielle">AI engineering · Vector search</span><span class="pmeta">Python · Milvus</span></div>
+        <h3 data-fr="API de recherche d'images inversée">Reverse image search API</h3>
+        <p data-fr="Envoyez une image, récupérez les plus similaires. Les images deviennent des embeddings indexés dans Milvus, derrière une API Python organisée en couches de routage et de service.">Upload an image, get the most similar ones back. Images become embeddings indexed in Milvus, behind a Python API organised in routing and service layers.</p>
+        <div class="chips"><span class="chip">Milvus</span><span class="chip">Embeddings</span><span class="chip">REST API</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/Reverse-image-search-milvus" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-chatbot" data-k="ai software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#1a140a"/><rect x="40" y="22" width="170" height="30" rx="15" fill="#fbbf24" opacity=".85"/><rect x="190" y="66" width="170" height="30" rx="15" fill="#2dd4bf" opacity=".85"/><g fill="#1a140a"><circle cx="70" cy="37" r="3"/><circle cx="82" cy="37" r="3"/><circle cx="94" cy="37" r="3"/></g></svg></div>
+        <div class="ptop"><span class="kind" data-fr="LLM · IA conversationnelle">LLM · Conversational AI</span><span class="pmeta">Flowise · JavaScript</span></div>
+        <h3 data-fr="Chatbot LLM intégrable">Embeddable LLM chatbot</h3>
+        <p data-fr="Un assistant IA conçu dans Flowise et intégré à n'importe quel site web grâce à un petit widget JavaScript hébergé sur GitHub Pages.">An AI assistant designed in Flowise and embedded in any website through a small JavaScript widget hosted on GitHub Pages.</p>
+        <div class="chips"><span class="chip">Flowise</span><span class="chip">LLMs</span><span class="chip">Agents</span><span class="chip">JavaScript</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/chatbot-flowise-js-hosting" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-patient" data-k="ai">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#120f1f"/><g stroke="#a78bfa" stroke-opacity=".35"><line x1="60" y1="25" x2="160" y2="40"/><line x1="60" y1="25" x2="160" y2="80"/><line x1="60" y1="60" x2="160" y2="40"/><line x1="60" y1="60" x2="160" y2="80"/><line x1="60" y1="95" x2="160" y2="40"/><line x1="60" y1="95" x2="160" y2="80"/><line x1="160" y1="40" x2="260" y2="60"/><line x1="160" y1="80" x2="260" y2="60"/></g><g fill="#a78bfa"><circle cx="60" cy="25" r="7"/><circle cx="60" cy="60" r="7"/><circle cx="60" cy="95" r="7"/><circle cx="160" cy="40" r="7"/><circle cx="160" cy="80" r="7"/></g><circle cx="260" cy="60" r="9" fill="#2dd4bf"/><path d="M290 60h20l8-18 12 36 8-18h40" stroke="#fb7185" stroke-width="3" fill="none"/></svg></div>
+        <div class="ptop"><span class="kind" data-fr="Deep learning · Santé">Deep learning · Healthcare</span><span class="pmeta">PyTorch · TensorFlow</span></div>
+        <h3 data-fr="Classification de la prise en charge des patients">Patient care classification</h3>
+        <p data-fr="Des résultats d'analyses hospitalières prédisent si un patient doit être hospitalisé ou suivi en ambulatoire. Construit avec TensorFlow, reconstruit avec PyTorch, puis comparé dans un rapport.">Hospital lab results predict whether a patient needs in-care or out-care treatment. Built in TensorFlow, rebuilt in PyTorch, then compared in a report.</p>
+        <div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/Deeplearning_patient_classification" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-fintech" data-k="ai data">
+        <div class="thumb photo"><img src="assets/img/projects/fintech.png" alt="Intelfin landing page" loading="lazy"></div>
+        <div class="ptop"><span class="kind" data-fr="FinTech · Projet d'équipe">FinTech · Team project</span><span class="pmeta">ML · OCR · BI</span></div>
+        <h3 data-fr="Intelfin : états financiers et risque de crédit">Intelfin: financial statements &amp; credit risk</h3>
+        <p data-fr="Une application qui automatise la saisie des états financiers d'une entreprise, évalue sa solvabilité et la classe comme vulnérable ou non, avec des tableaux de bord pour accélérer l'octroi de crédit.">An app that automates data entry from a company's financial statements, scores its solvency and classifies it as vulnerable or not, with dashboards that speed up loan decisions.</p>
+        <div class="chips"><span class="chip">Credit scoring</span><span class="chip">OCR</span><span class="chip" data-fr="Tableaux de bord">Dashboards</span></div>
+        <div class="plinks"><a href="https://github.com/Manel-Fares/Financial-statement-recognition-and-credit-risk-management" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg><span data-fr="Dépôt de l'équipe">Team repository</span></a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-flights" data-k="data">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0f1416"/><path d="M20 100 Q 120 20 200 60 T 380 30" stroke="#93a1ad" stroke-dasharray="3 6" fill="none" stroke-width="2"/><path d="M196 52l14 8-14 8 3-8z" fill="#fbbf24"/><g fill="#2dd4bf"><rect x="40" y="95" width="16" height="15" rx="3"/><rect x="62" y="85" width="16" height="25" rx="3"/><rect x="84" y="90" width="16" height="20" rx="3"/></g><g fill="#fb7185"><rect x="300" y="80" width="16" height="30" rx="3"/><rect x="322" y="70" width="16" height="40" rx="3"/><rect x="344" y="88" width="16" height="22" rx="3"/></g></svg></div>
+        <div class="ptop"><span class="kind" data-fr="Analyse exploratoire · Aviation">Exploratory analysis · Aviation</span><span class="pmeta">pandas · Seaborn</span></div>
+        <h3 data-fr="Qu'est-ce qui retarde les vols aux États-Unis ?">What delays US flights?</h3>
+        <p data-fr="Tous les vols commerciaux américains de 2007, issus d'un jeu de données de 120 millions de lignes : retards selon la compagnie, l'aéroport, l'heure et la saison.">Every commercial US flight in 2007, from a 120-million-row dataset: delays by carrier, airport, time of day and season.</p>
+        <div class="chips"><span class="chip">pandas</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/flightUsa_Analysis" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-airbnb" data-k="data software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#0e1612"/><g stroke="#1f3a30" stroke-width="2" fill="none"><path d="M0 40h400M0 80h400M100 0v120M200 0v120M300 0v120"/><path d="M40 0 C 120 60, 260 30, 400 110" stroke="#2a5a4a" stroke-width="6"/></g><g fill="#fb7185"><circle cx="130" cy="50" r="6"/><circle cx="220" cy="70" r="6"/><circle cx="260" cy="40" r="6"/></g><g fill="#fbbf24"><circle cx="170" cy="85" r="6"/><circle cx="320" cy="60" r="6"/></g><g fill="#2dd4bf"><circle cx="80" cy="30" r="6"/><circle cx="350" cy="95" r="6"/></g></svg></div>
+        <div class="ptop"><span class="kind" data-fr="Application data · Immobilier">Data app · Real estate</span><span class="pmeta">Streamlit · Plotly</span></div>
+        <h3 data-fr="Explorateur Airbnb d'Amsterdam">Amsterdam Airbnb explorer</h3>
+        <p data-fr="Une application Streamlit interactive pour explorer les annonces Airbnb d'Amsterdam : prix, quartiers et emplacements sur une carte, avec des filtres.">An interactive Streamlit app to explore Amsterdam Airbnb listings: prices, neighbourhoods and locations on a map, with filters.</p>
+        <div class="chips"><span class="chip">Streamlit</span><span class="chip">pandas</span><span class="chip">Plotly</span></div>
+        <div class="plinks"><a href="https://github.com/amisamyra99/StreamlitAirbnb" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-gh"/></svg>Code</a></div>
+      </article>
+
+      <article class="pcard sec" id="pr-ngo" data-k="software">
+        <div class="thumb"><svg viewBox="0 0 400 120" preserveAspectRatio="none"><rect width="400" height="120" fill="#16101a"/><rect x="40" y="20" width="150" height="85" rx="6" fill="none" stroke="#a78bfa" stroke-opacity=".7"/><rect x="40" y="20" width="150" height="14" rx="6" fill="#a78bfa" opacity=".4"/><rect x="215" y="30" width="90" height="70" rx="5" fill="none" stroke="#38bdf8" stroke-opacity=".7"/><rect x="325" y="25" width="40" height="78" rx="8" fill="none" stroke="#2dd4bf" stroke-opacity=".9"/><path d="M110 82c-12-8-20-14-20-22a9 9 0 0 1 20-3 9 9 0 0 1 20 3c0 8-8 14-20 22z" fill="#fb7185"/></svg></div>
+        <div class="ptop"><span class="kind" data-fr="Web, desktop &amp; mobile · Équipe de 6">Web, desktop &amp; mobile · Team of 6</span><span class="pmeta">Symfony · Java</span></div>
+        <h3 data-fr="Application pour associations à but non lucratif">Platform for non-profit associations</h3>
+        <p data-fr="Une même plateforme en version web, desktop et mobile pour les associations : gestion des utilisateurs et des dons pour des refuges. Projet d'école de 7 mois.">One platform in web, desktop and mobile versions for associations: user management and donation management for shelters. A 7-month school project.</p>
+        <div class="chips"><span class="chip">Symfony</span><span class="chip">Java SE</span><span class="chip">Codename One</span></div>
+        <div class="plinks"><span class="muted">ESPRIT · 2019–2020</span></div>
+      </article>
+
+      <article class="pcard sec" id="pr-smarthome" data-k="software">
+        <div class="thumb photo"><img src="assets/img/projects/smarthome.png" alt="Smart House app main menu" loading="lazy"></div>
+        <div class="ptop"><span class="kind" data-fr="IoT · Équipe de 5">IoT · Team of 5</span><span class="pmeta">C++ · Qt · Arduino</span></div>
+        <h3 data-fr="Application domotique Smart Home">Smart Home desktop app</h3>
+        <p data-fr="Une application desktop qui pilote les appareils d'une maison grâce à des capteurs : température de chaque pièce en temps réel et suggestions automatiques.">A desktop app that controls home appliances through sensors: real-time temperature for each room and automatic suggestions.</p>
+        <div class="chips"><span class="chip">C++</span><span class="chip">Qt</span><span class="chip">Arduino</span><span class="chip" data-fr="Capteurs">Sensors</span></div>
+        <div class="plinks"><span class="muted">ESPRIT · 2018–2019</span></div>
+      </article>
+
+      <article class="pcard sec" id="pr-animalia" data-k="software">
+        <div class="thumb photo"><img src="assets/img/projects/animalia.png" alt="Animalia online shop home page" loading="lazy"></div>
+        <div class="ptop"><span class="kind" data-fr="E-commerce · Équipe de 5">E-commerce · Team of 5</span><span class="pmeta">PHP · JavaScript</span></div>
+        <h3 data-fr="Animalia, boutique en ligne">Animalia online shop</h3>
+        <p data-fr="Le site e-commerce d'une animalerie (accessoires et jouets pour animaux) : catalogue, panier et commandes.">The e-commerce site for a pet shop selling accessories and toys: catalogue, cart and orders.</p>
+        <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span></div>
+        <div class="plinks"><span class="muted">ESPRIT · 2018–2019</span></div>
+      </article>
+
+      <article class="pcard sec" id="pr-stayout" data-k="software">
+        <div class="thumb photo"><img src="assets/img/projects/stayout.png" alt="Stay Out main menu: a haunted house at night with New Game, Load Game, Setting and Exit buttons" loading="lazy" style="object-position:center"></div>
+        <div class="ptop"><span class="kind" data-fr="Jeu vidéo · Équipe de 5">Video game · Team of 5</span><span class="pmeta">C · SDL</span></div>
+        <h3 data-fr="Stay Out, jeu d'énigmes horrifique">Stay Out, a horror puzzle game</h3>
+        <p data-fr="Le joueur arrive devant un manoir hanté et doit résoudre une série d'énigmes pour avancer, par exemple « Trouve un tableau célèbre de Picasso ». Une mauvaise réponse coûte de la vie. Le jeu a un vrai menu (nouvelle partie, charger une partie, paramètres) et la sauvegarde de la progression.">The player arrives at a haunted mansion and has to solve a series of riddles to move forward, such as "Find a famous Picasso painting". Wrong answers cost lives. The game has a full menu (new game, load game, settings) and saves progress.</p>
+        <p data-fr="<strong>Mon rôle :</strong> déplacements du personnage, gestion de la vie et du score, et intégration de tous les modules dans le jeu final. Écrit en C avec SDL, en équipe de 5, sur 7 mois."><strong>My role:</strong> character movement, life and score handling, and integrating every module into the final game. Written in C with SDL, in a team of 5, over 7 months.</p>
+        <div class="chips"><span class="chip">C</span><span class="chip">SDL</span><span class="chip">Game logic</span></div>
+        <div class="plinks"><span class="muted">ESPRIT · 2017–2018</span></div>
+      </article>
+
+    </div>
+    <aside class="toc" data-for="projects"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#pr-docubot">DocuBot</a><a href="#pr-docai" data-fr="IA documentaire">Document AI</a><a href="#pr-churn" data-fr="Prédiction du churn">Churn prediction</a><a href="#pr-milvus" data-fr="Recherche d'images">Image search API</a><a href="#pr-chatbot" data-fr="Chatbot LLM">LLM chatbot</a><a href="#pr-patient" data-fr="Classification patients">Patient classification</a><a href="#pr-fintech" data-fr="Risque de crédit">Credit risk app</a><a href="#pr-flights" data-fr="Retards de vols">Flight delays</a><a href="#pr-airbnb">Airbnb explorer</a><a href="#pr-ngo" data-fr="Plateforme associative">Non-profit platform</a><a href="#pr-smarthome">Smart Home</a><a href="#pr-animalia">Animalia</a><a href="#pr-stayout">Stay Out</a></aside>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="page" id="p-certificates">
+  <div class="ph"><span class="badge b-mint"><svg class="i"><use href="#i-award"/></svg><span data-fr="Certificats">Certificates</span></span>
+    <h1 data-fr="Certificats, diplômes &amp; références">Certificates, Diplomas &amp; References</h1>
+    <p data-fr="Des formations continues en IA et en data science vérifiables en ligne, mes diplômes et ce que disent mes anciens employeurs.">Continuous learning in AI and data science, verifiable online, my diplomas, and what my former employers say.</p></div>
+  <div class="layout">
+    <div>
+      <div class="cgrid">
+        <article class="ccard sec" id="c-aiml">
+          <div class="seal b-amber"><svg class="i"><use href="#i-award"/></svg></div>
+          <div class="cbody"><h3>Advanced Artificial Intelligence &amp; Machine Learning E-Degree</h3><p class="issuer" data-fr="Eduonix Learning Solutions · déc. 2021">Eduonix Learning Solutions · Dec 2021</p>
+            <div class="cmeta"><span class="grade" data-fr="Mention A+">A+ grade</span></div>
+            <a class="verify" href="https://www.eduonix.com/certificate/3a3f692974" target="_blank" rel="noopener noreferrer"><span data-fr="Vérifier le certificat">Verify certificate</span><svg class="i"><use href="#i-ext"/></svg></a></div>
+        </article>
+        <article class="ccard sec" id="c-practitioner">
+          <div class="seal b-amber"><svg class="i"><use href="#i-award"/></svg></div>
+          <div class="cbody"><h3>AI-ML for Advanced Practitioners E-Degree</h3><p class="issuer" data-fr="Eduonix Learning Solutions · juil. 2022">Eduonix Learning Solutions · Jul 2022</p>
+            <div class="cmeta"><span class="grade" data-fr="Mention A+">A+ grade</span></div>
+            <a class="verify" href="https://www.eduonix.com/certificate/fbd656e183" target="_blank" rel="noopener noreferrer"><span data-fr="Vérifier le certificat">Verify certificate</span><svg class="i"><use href="#i-ext"/></svg></a></div>
+        </article>
+        <article class="ccard sec" id="c-jhu">
+          <div class="seal b-sky"><svg class="i"><use href="#i-cap"/></svg></div>
+          <div class="cbody"><h3>The Data Scientist's Toolbox</h3><p class="issuer" data-fr="Johns Hopkins University sur Coursera · oct. 2020">Johns Hopkins University via Coursera · Oct 2020</p>
+            <a class="verify" href="https://coursera.org/verify/RH7R2A4X22KZ" target="_blank" rel="noopener noreferrer"><span data-fr="Vérifier le certificat">Verify certificate</span><svg class="i"><use href="#i-ext"/></svg></a></div>
+        </article>
+        <article class="ccard sec" id="c-tf">
+          <div class="seal b-violet"><svg class="i"><use href="#i-brain"/></svg></div>
+          <div class="cbody"><h3>Basic Image Classification with TensorFlow</h3><p class="issuer" data-fr="Coursera Project Network · nov. 2021">Coursera Project Network · Nov 2021</p></div>
+        </article>
+        <article class="ccard sec" id="c-marketing">
+          <div class="seal b-rose"><svg class="i"><use href="#i-globe"/></svg></div>
+          <div class="cbody"><h3 data-fr="Marketing digital">Digital Marketing</h3><p class="issuer" data-fr="Switch Maker, avec le soutien du FENU (UNCDF) · Ouagadougou · sept. 2020">Switch Maker, supported by UNCDF · Ouagadougou · Sep 2020</p></div>
+        </article>
+      </div>
+      <h2 class="subhead sec" id="c-diplomas"><span class="sico" style="color:var(--amber)"><svg class="i"><use href="#i-cap"/></svg></span><span data-fr="Diplômes">Diplomas</span></h2>
+      <div class="cgrid">
+        <article class="ccard">
+          <div class="seal b-amber"><svg class="i"><use href="#i-cap"/></svg></div>
+          <div class="cbody"><h3 data-fr="Diplôme National d'Ingénieur, Informatique">National Engineering Diploma, Computer Science</h3><p class="issuer" data-fr="ESPRIT, Tunis · juin 2023">ESPRIT, Tunis · June 2023</p>
+            <div class="cmeta"><span class="grade" data-fr="Accréditation EUR-ACE">EUR-ACE accredited</span><span class="grade" data-fr="Spécialité Data Science">Data Science track</span></div>
+            <p class="issuer" data-fr="Niveau master (5 ans). Accréditation européenne des programmes d'ingénieurs.">Master's level (5 years). European accreditation for engineering programmes.</p></div>
+        </article>
+        <article class="ccard">
+          <div class="seal b-sky"><svg class="i"><use href="#i-cap"/></svg></div>
+          <div class="cbody"><h3 data-fr="Licence (B.A.) International Business &amp; Economics">B.A. International Business &amp; Economics</h3><p class="issuer" data-fr="Hochschule Schmalkalden, Allemagne · en cours">Hochschule Schmalkalden, Germany · in progress</p>
+            <div class="cmeta"><span class="grade" data-fr="Mémoire en 2027">Thesis 2027</span></div>
+            <p class="issuer" data-fr="Mémoire sur la digitalisation du commerce des PME dans la ZLECAf.">Thesis on digital trade for small businesses in the AfCFTA.</p></div>
+        </article>
+        <article class="ccard">
+          <div class="seal b-violet"><svg class="i"><use href="#i-cap"/></svg></div>
+          <div class="cbody"><h3 data-fr="Baccalauréat, série D">Baccalaureate, Series D</h3><p class="issuer" data-fr="Université Ouaga I Pr Joseph Ki-Zerbo, Burkina Faso · 2017">Université Ouaga I Pr Joseph Ki-Zerbo, Burkina Faso · 2017</p>
+            <div class="cmeta"><span class="grade" data-fr="Mention Bien">With honours (mention Bien)</span></div>
+            <p class="issuer" data-fr="Mathématiques et sciences de la nature.">Mathematics and natural sciences.</p></div>
+        </article>
+      </div>
+      <p class="privacy" data-fr="Copies des diplômes disponibles sur demande.">Copies of diplomas available on request.</p>
+
+      <h2 class="subhead sec" id="c-refs"><span class="sico" style="color:var(--teal)"><svg class="i"><use href="#i-file"/></svg></span><span data-fr="Ce que disent mes employeurs">What my employers say</span></h2>
+      <div class="quotes">
+        <article class="qcard"><blockquote data-fr="« Dès le début, Mme Ouedraogo a fait preuve d'une capacité exceptionnelle à comprendre rapidement de nouveaux sujets. Elle a obtenu de manière proactive toutes les informations nécessaires à son travail et a procédé de façon structurée et orientée vers les objectifs. »">"From the very beginning, Ms. Ouedraogo demonstrated an exceptionally quick grasp of new topics. She proactively obtained all information necessary for her work and proceeded in a structured and goal-oriented manner."</blockquote>
+          <p class="by" data-fr="<b>Intershop Communications AG</b> · lettre de référence, 2026"><b>Intershop Communications AG</b> · reference letter, 2026</p></article>
+        <article class="qcard"><blockquote data-fr="« Elle a abordé les tâches difficiles avec méthode et énergie, et a trouvé des solutions pertinentes et pragmatiques, même sous une forte pression. Elle a toujours obtenu des résultats supérieurs à la moyenne. »">"She approached difficult tasks methodically and with energy, and found sensible, practical solutions, even under increased time pressure. She consistently achieved above-average results."</blockquote>
+          <p class="by" data-fr="<b>elevait GmbH &amp; Co. KG</b> · certificat de travail, 2023 (traduit de l'allemand)"><b>elevait GmbH &amp; Co. KG</b> · employment reference, 2023 (translated from German)</p></article>
+      </div>
+      <div class="refnote">
+        <span class="sico" style="color:var(--teal)"><svg class="i"><use href="#i-check"/></svg></span>
+        <p data-fr="Les documents complets (certificats de travail d'Intershop et d'elevait, lettre de recommandation en anglais) sont disponibles sur demande via LinkedIn.">The full documents (employment references from Intershop and elevait, and an English reference letter) are available on request via LinkedIn.</p>
+      </div>
+    </div>
+    <aside class="toc" data-for="certificates"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#c-aiml">AI &amp; ML E-Degree</a><a href="#c-practitioner">AI-ML Practitioners</a><a href="#c-jhu">Johns Hopkins</a><a href="#c-tf">TensorFlow</a><a href="#c-marketing" data-fr="Marketing digital">Digital Marketing</a><a href="#c-diplomas" data-fr="Diplômes">Diplomas</a><a href="#c-refs" data-fr="Références">References</a></aside>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section class="page" id="p-events">
+  <div class="ph"><span class="badge b-rose"><svg class="i"><use href="#i-mic"/></svg><span data-fr="Événements">Events</span></span>
+    <h1 data-fr="Leadership &amp; événements">Leadership &amp; Events</h1>
+    <p data-fr="Au-delà du code : j'organise, je prends la parole et je connecte les gens, entre l'Afrique et l'Europe.">Beyond code: I organise, speak on stage and connect people across Africa and Europe.</p></div>
+  <div class="layout">
+    <div class="elist">
+
+      <article class="ecard sec" id="e-stic">
+        <div class="carousel" aria-roledescription="carousel" aria-label="STIC'26 photos">
+          <div class="slide"><img class="bg" src="assets/img/events/stic-1.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/stic-1.jpg" alt="Ami Samyra speaking at the STIC'26 final" loading="lazy"></div>
+          <div class="slide"><img class="bg" src="assets/img/events/stic-2.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/stic-2.jpg" alt="Ami Samyra presenting at the Sahal Tech Innovation Challenge" loading="lazy"></div>
+          <button class="cbtn prev" type="button" aria-label="Previous"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <button class="cbtn next" type="button" aria-label="Next"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <div class="dots"></div>
+        </div>
+        <div class="ebody">
+          <div class="erole"><span class="badge b-amber" data-fr="Co-organisatrice">Co-organiser</span><span class="badge b-teal" data-fr="Intervenante">Speaker</span></div>
+          <h3>STIC'26 · Sahal Tech Innovation Challenge</h3>
+          <p class="emeta" data-fr="Finale · 22 août 2026 · Ouaga 2000, Ouagadougou, Burkina Faso">Final · 22 Aug 2026 · Ouaga 2000, Ouagadougou, Burkina Faso</p>
+          <p data-fr="Un concours d'innovation technologique organisé par Sahal Tech Innovation Labs. J'ai participé à l'organisation de la compétition et je suis intervenue sur scène lors de la finale, devant les participants, les partenaires et les officiels.">A tech innovation competition run by Sahal Tech Innovation Labs. I helped organise the competition and spoke on stage at the final, in front of participants, partners and officials.</p>
+        </div>
+      </article>
+
+      <article class="ecard sec" id="e-afrikalden">
+        <div class="carousel" aria-roledescription="carousel" aria-label="Afrikalden photos">
+          <div class="slide"><img class="bg" src="assets/img/events/afrikalden.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/afrikalden.jpg" alt="Ami Samyra hosting Afrikalden on stage" loading="lazy"></div>
+          <button class="cbtn prev" type="button" aria-label="Previous"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <button class="cbtn next" type="button" aria-label="Next"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <div class="dots"></div>
+        </div>
+        <div class="ebody">
+          <div class="erole"><span class="badge b-amber" data-fr="Présidente, communauté afro de Schmalkalden">President, Afro community Schmalkalden</span><span class="badge b-teal" data-fr="Co-organisatrice">Co-organiser</span></div>
+          <h3 data-fr="Afrikalden, 1ère édition">Afrikalden, 1st edition</h3>
+          <p class="emeta" data-fr="Schmalkalden, Allemagne">Schmalkalden, Germany</p>
+          <p data-fr="Un événement culturel qui fait découvrir la culture africaine et les opportunités d'affaires sur le continent. En tant que présidente de la communauté afro de Schmalkalden, j'ai co-organisé la toute première édition et animé le programme sur scène.">A cultural event showcasing African culture and the business opportunities across the continent. As president of the Afro community in Schmalkalden, I co-organised the very first edition and hosted the programme on stage.</p>
+        </div>
+      </article>
+
+      <article class="ecard sec" id="e-leap">
+        <div class="carousel" aria-roledescription="carousel" aria-label="LEAP East 2026 photos and video">
+          <div class="slide"><img class="bg" src="assets/img/events/leap-1.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/leap-1.jpg" alt="Ami Samyra at LEAP East 2026" loading="lazy"></div>
+          <div class="slide"><span class="slide-tag" data-fr="Vidéo · sans son">Video · no sound</span><video muted playsinline preload="metadata" poster="assets/img/events/leap-poster.jpg"><source src="assets/video/leap-east-2026.mp4" type="video/mp4"></video></div>
+          <div class="slide"><img class="bg" src="assets/img/events/leap-2.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/leap-2.jpg" alt="Panel on AI and data centers at LEAP East 2026" loading="lazy"></div>
+          <div class="slide"><img class="bg" src="assets/img/events/leap-3.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/leap-3.jpg" alt="Keynote at LEAP East 2026" loading="lazy"></div>
+          <button class="cbtn prev" type="button" aria-label="Previous"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <button class="cbtn next" type="button" aria-label="Next"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <div class="dots"></div>
+        </div>
+        <div class="ebody">
+          <div class="erole"><span class="badge b-sky" data-fr="Participante">Attendee</span><span class="badge b-violet" data-fr="Networking">Networking</span></div>
+          <h3>LEAP East 2026</h3>
+          <p class="emeta" data-fr="Conférence tech · 2026">Tech conference · 2026</p>
+          <p data-fr="Une conférence internationale sur l'IA, les data centers et l'économie numérique. J'ai suivi des sessions comme « AI &amp; Data Centers: Powering Growth Sustainably » et échangé avec des acteurs du secteur sur l'IA et les opportunités entre les régions, comme dans la vidéo.">An international conference on AI, data centres and the digital economy. I followed sessions such as "AI &amp; Data Centers: Powering Growth Sustainably" and met industry leaders to talk about AI and opportunities between regions, as in the video.</p>
+        </div>
+      </article>
+
+      <article class="ecard sec" id="e-hannover">
+        <div class="carousel" aria-roledescription="carousel" aria-label="Hannover Messe 2025 photos">
+          <div class="slide"><img class="bg" src="assets/img/events/hm-1.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/hm-1.jpg" alt="Ami Samyra at an exhibitor stand at Hannover Messe 2025" loading="lazy"></div>
+          <div class="slide"><img class="bg" src="assets/img/events/hm-2.jpg" alt="" aria-hidden="true" loading="lazy"><img class="fg" src="assets/img/events/hm-2.jpg" alt="Ami Samyra at the #HM25 sign, Hannover Messe 2025" loading="lazy" style="object-position:center bottom"></div>
+          <button class="cbtn prev" type="button" aria-label="Previous"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <button class="cbtn next" type="button" aria-label="Next"><svg class="i"><use href="#i-arrow"/></svg></button>
+          <div class="dots"></div>
+        </div>
+        <div class="ebody">
+          <div class="erole"><span class="badge b-sky" data-fr="Visiteuse">Visitor</span></div>
+          <h3>Hannover Messe 2025</h3>
+          <p class="emeta" data-fr="Hanovre, Allemagne">Hannover, Germany</p>
+          <p data-fr="Le plus grand salon industriel au monde. J'y suis allée pour voir comment l'IA, l'automatisation et les jumeaux numériques transforment l'industrie, et pour rencontrer des entreprises.">The world's leading industrial trade fair. I went to see how AI, automation and digital twins are changing industry, and to meet companies.</p>
+        </div>
+      </article>
+
+    </div>
+    <aside class="toc" data-for="events"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#e-stic">STIC'26</a><a href="#e-afrikalden">Afrikalden</a><a href="#e-leap">LEAP East 2026</a><a href="#e-hannover">Hannover Messe</a></aside>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="page" id="p-skills">
+  <div class="ph"><span class="badge b-violet"><svg class="i"><use href="#i-spark"/></svg><span data-fr="Compétences">Skills</span></span>
+    <h1 data-fr="Compétences &amp; expertise">Skills &amp; Expertise</h1>
+    <p data-fr="Ce que j'utilise pour aller d'une idée à une application qui tourne en production.">What I use to go from an idea to an application running in production.</p></div>
+  <div class="layout">
+    <div class="sgrid">
+      <div class="scard sec" id="s-code" style="--c:var(--violet)"><h3><span class="sico" style="color:var(--violet)"><svg class="i"><use href="#i-code"/></svg></span><span data-fr="Langages de programmation">Programming languages</span></h3>
+        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C / C++</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">PHP</span><span class="tag">R</span><span class="tag">C#</span></div></div>
+      <div class="scard sec" id="s-ml"><h3><span class="sico" style="color:var(--teal)"><svg class="i"><use href="#i-brain"/></svg></span><span data-fr="IA &amp; Machine Learning">AI &amp; Machine Learning</span></h3>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">TensorFlow / Keras</span><span class="tag">scikit-learn</span><span class="tag">LLMs &amp; agents</span><span class="tag">LangChain · RAG</span><span class="tag">Botpress · Rasa</span><span class="tag">Flowise</span><span class="tag" data-fr="Recherche vectorielle · Milvus">Vector search · Milvus</span><span class="tag" data-fr="IA documentaire · OCR">Document AI · OCR</span><span class="tag">NetworkX</span></div></div>
+      <div class="scard sec" id="s-eng" style="--c:var(--sky)"><h3><span class="sico" style="color:var(--sky)"><svg class="i"><use href="#i-cloud"/></svg></span><span data-fr="Développement &amp; déploiement">Engineering &amp; deployment</span></h3>
+        <div class="tags"><span class="tag">Azure Pipelines</span><span class="tag">Azure Search</span><span class="tag">CI/CD</span><span class="tag">n8n</span><span class="tag">JMeter · InfluxDB · Grafana</span><span class="tag">AWS</span><span class="tag">REST APIs</span><span class="tag">Django</span><span class="tag">Flask</span><span class="tag">Symfony</span><span class="tag">Spring Boot</span><span class="tag">Git</span><span class="tag" data-fr="Administration Unix">Unix administration</span></div></div>
+      <div class="scard sec" id="s-data" style="--c:var(--amber)"><h3><span class="sico" style="color:var(--amber)"><svg class="i"><use href="#i-db"/></svg></span><span data-fr="Données &amp; BI">Data &amp; BI</span></h3>
+        <div class="tags"><span class="tag">pandas · NumPy</span><span class="tag">Spark</span><span class="tag">MySQL</span><span class="tag">Oracle</span><span class="tag">Power BI</span><span class="tag">Streamlit</span><span class="tag">Plotly</span><span class="tag">MLflow</span></div></div>
+      <div class="scard sec" id="s-iot" style="--c:var(--rose)"><h3><span class="sico" style="color:var(--rose)"><svg class="i"><use href="#i-flow"/></svg></span><span data-fr="Matériel &amp; IoT">Hardware &amp; IoT</span></h3>
+        <div class="tags"><span class="tag">Arduino</span><span class="tag" data-fr="Capteurs">Sensors</span><span class="tag">Qt</span><span class="tag" data-fr="Impression 3D">3D printing</span></div></div>
+      <div class="scard sec" id="s-work" style="--c:var(--mint)"><h3><span class="sico" style="color:var(--mint)"><svg class="i"><use href="#i-users"/></svg></span><span data-fr="Méthodes &amp; savoir-être">Ways of working</span></h3>
+        <div class="tags"><span class="tag">Scrum</span><span class="tag" data-fr="Échanges avec les clients">Customer communication</span><span class="tag" data-fr="Travail en équipe">Teamwork</span><span class="tag" data-fr="Travail à distance">Remote collaboration</span><span class="tag" data-fr="Économie &amp; business">Economics &amp; business</span><span class="tag" data-fr="Prise de responsabilité">Taking ownership</span></div></div>
+    </div>
+    <aside class="toc" data-for="skills"><h4><svg class="i"><use href="#i-list"/></svg><span data-fr="Sur cette page">On this page</span></h4>
+      <a href="#s-code" data-fr="Langages">Languages</a><a href="#s-ml" data-fr="IA &amp; ML">AI &amp; ML</a><a href="#s-eng" data-fr="Déploiement">Engineering</a><a href="#s-data" data-fr="Données &amp; BI">Data &amp; BI</a><a href="#s-iot">Hardware &amp; IoT</a><a href="#s-work" data-fr="Méthodes">Ways of working</a></aside>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="p-about">
+  <div class="ph"><span class="badge b-rose"><svg class="i"><use href="#i-user"/></svg><span data-fr="À propos">About</span></span>
+    <h1 data-fr="Mon histoire">My Story</h1>
+    <p data-fr="Ingénieure avant tout. L'économie a fait de moi une meilleure ingénieure.">An engineer at heart. Economics made me a better one.</p></div>
+  <div class="about">
+    <div>
+      <p class="quote" data-fr="Je ne suis pas la candidate qui coche toutes les cases. Je suis celle qui ne lâche pas un problème avant de l'avoir résolu.">I'm not the candidate who ticks every box. I'm the one who won't let go of a problem until it's solved.</p>
+      <div class="values">
+        <div class="value"><span class="sico" style="color:var(--teal)"><svg class="i"><use href="#i-check"/></svg></span><div><h4 data-fr="Je prends mes responsabilités">I take ownership</h4><p data-fr="Du premier échange avec le client au suivi après la mise en production, je me sens responsable du résultat.">From the first customer conversation to support after launch, I feel responsible for the result.</p></div></div>
+        <div class="value"><span class="sico" style="color:var(--amber)"><svg class="i"><use href="#i-users"/></svg></span><div><h4 data-fr="Je travaille avec les gens">I work with people</h4><p data-fr="Clients, équipe produit, développeurs : je parle avec tout le monde pour construire la bonne solution.">Customers, product team, developers: I talk to everyone to build the right solution.</p></div></div>
+        <div class="value"><span class="sico" style="color:var(--sky)"><svg class="i"><use href="#i-globe"/></svg></span><div><h4 data-fr="Remote, et prête à voyager">Remote, and ready to travel</h4><p data-fr="Je suis plus productive à distance. Et quand un projet me passionne, je vais là où il faut être.">I'm most productive remotely. And when a project excites me, I go wherever I need to be.</p></div></div>
+        <div class="value"><span class="sico" style="color:var(--rose)"><svg class="i"><use href="#i-spark"/></svg></span><div><h4 data-fr="Je donne tout quand le travail compte">I give everything when the work matters</h4><p data-fr="Quand je me sens respectée et que mon travail a de l'impact, je m'investis sans compter.">When I feel respected and my work has impact, I give it everything I have.</p></div></div>
+      </div>
+    </div>
+    <div class="prose">
+      <p data-fr="Je suis ingénieure en informatique, spécialisée en data science. J'ai appris à programmer en écrivant un jeu vidéo en C, puis j'ai construit des sites web, des applications desktop et mobiles, des objets connectés, et enfin des modèles de machine learning et des applications d'IA.">I'm a computer science engineer specialised in data science. I learned to code by writing a video game in C, then built websites, desktop and mobile apps, connected devices, and finally machine learning models and AI applications.</p>
+      <p data-fr="Depuis près de trois ans en Allemagne, je développe des applications IA et data, je construis des pipelines et je déploie ce que je crée. C'est ce que j'aime : prendre un projet en main, parler avec le client, travailler avec l'équipe et livrer quelque chose qui fonctionne vraiment.">For nearly three years in Germany, I've built AI and data applications, set up pipelines and deployed what I create. That's what I love: taking charge of a project, talking with the customer, working with the team and delivering something that really works.</p>
+      <h3 data-fr="Pourquoi l'économie ?">Why economics?</h3>
+      <p data-fr="Pour être honnête, je n'avais pas prévu d'étudier l'économie. Les circonstances m'y ont amenée. Mais j'ai appris à l'aimer, et j'ai décidé d'aller jusqu'au bout : je termine ma licence en International Business &amp; Economics à la Hochschule Schmalkalden.">To be honest, I didn't plan to study economics. Circumstances led me there. But I learned to love it, and I decided to see it through: I'm finishing my B.A. in International Business &amp; Economics at Hochschule Schmalkalden.</p>
+      <p data-fr="Elle m'a apporté quelque chose que beaucoup de développeurs n'ont pas : je comprends les coûts, les marchés et la façon dont une entreprise prend ses décisions. Je l'applique dans mon travail. Mais ma vocation reste la même : <strong>je suis data scientist et ingénieure en informatique</strong>.">It gave me something many developers don't have: I understand costs, markets and how a business makes decisions, and I apply that in my work. But my calling hasn't changed: <strong>I'm a data scientist and a computer science engineer</strong>.</p>
+      <h3 data-fr="Ce que je recherche">What I'm looking for</h3>
+      <p data-fr="Une entreprise qui me donne de vrais défis, en data science, en ingénierie IA ou en conseil. Je ne corresponds peut-être pas à 100 % au profil recherché, mais si vous voulez investir dans quelqu'un qui s'engage entièrement pour votre entreprise, parlons-en.">A company that gives me real challenges, in data science, AI engineering or consulting. I may not match 100% of the profile you're looking for, but if you want to invest in someone who commits fully to your company, let's talk.</p>
+      <div class="facts">
+        <div class="fact"><span data-fr="Basée en">Based in</span><b data-fr="Allemagne">Germany</b></div>
+        <div class="fact"><span data-fr="Mode de travail">Work style</span><b data-fr="Remote, hybride, mobile">Remote, hybrid, travel-ready</b></div>
+        <div class="fact"><span data-fr="Langues">Languages</span><b data-fr="Français, anglais, allemand (en cours)">French, English, German (learning)</b></div>
+        <div class="fact"><span data-fr="Je recherche">Looking for</span><b data-fr="Data Scientist · AI Engineer · Conseil">Data Scientist · AI Engineer · Consulting</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback sec" id="feedback">
+    <div class="fb-intro">
+      <span class="badge b-violet"><svg class="i"><use href="#i-chat"/></svg><span data-fr="Anonyme">Anonymous</span></span>
+      <h2 data-fr="Je ne suis pas le bon profil ? Dites-moi pourquoi.">Not the right fit? Tell me why.</h2>
+      <p data-fr="Ce formulaire est anonyme : pas de nom, pas d'email, rien qui permette de vous identifier. Un message court et honnête m'aide à progresser.">This form is anonymous: no name, no email, nothing that identifies you. A short, honest message helps me improve.</p>
+      <ul>
+        <li data-fr="Qu'est-ce qui manquait pour votre poste ?">What was missing for your role?</li>
+        <li data-fr="Qu'est-ce qui n'était pas clair dans mon portfolio ?">What wasn't clear in my portfolio?</li>
+        <li data-fr="Qu'est-ce qui vous a plu ?">What did you like?</li>
+      </ul>
+    </div>
+    <form id="fb-form" novalidate>
+      <fieldset>
+        <legend data-fr="Vous êtes (facultatif)">You are (optional)</legend>
+        <label class="fb-chip"><input type="radio" name="role" value="recruiter"><span data-fr="Recruteur·se">Recruiter</span></label>
+        <label class="fb-chip"><input type="radio" name="role" value="hiring-manager"><span data-fr="Manager">Hiring manager</span></label>
+        <label class="fb-chip"><input type="radio" name="role" value="engineer"><span data-fr="Développeur·se / data">Engineer / data</span></label>
+        <label class="fb-chip"><input type="radio" name="role" value="other"><span data-fr="Autre">Other</span></label>
+      </fieldset>
+      <label class="lbl" for="fb-msg" data-fr="Votre message">Your message</label>
+      <textarea id="fb-msg" name="message" maxlength="2000" required data-ph-en="What could I improve? What was missing?" data-ph-fr="Qu'est-ce que je pourrais améliorer ? Qu'est-ce qui manquait ?" placeholder="What could I improve? What was missing?"></textarea>
+      <p class="fb-count"><span id="fb-len">0</span> / 2000</p>
+      <input class="hp" type="text" name="_gotcha" id="fb-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="fb-actions">
+        <button class="btn primary" type="submit" id="fb-send"><svg class="i"><use href="#i-arrow"/></svg><span data-fr="Envoyer anonymement">Send anonymously</span></button>
+        <p class="fb-status" id="fb-status" role="status"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="cta-band" id="contact">
+  <div><h2 data-fr="Vous avez un défi ? Parlons-en.">Got a challenge? Let's talk.</h2>
+    <p data-fr="Ouverte aux postes de Data Scientist, AI Engineer et consultante, en remote, hybride ou avec déplacements. Écrivez-moi un email ou un message sur LinkedIn.">Open to Data Scientist, AI Engineer and consulting roles, remote, hybrid or with travel. Send me an email or a message on LinkedIn.</p>
+    <div class="mailrow"><span class="mail">ouedraogoamisamyra@gmail.com</span><button class="copy" type="button" id="copy-mail" data-copy="ouedraogoamisamyra@gmail.com" data-fr="Copier">Copy</button></div></div>
+  <div class="btns">
+    <a class="btn primary" href="mailto:ouedraogoamisamyra@gmail.com?subject=Hello%20Ami%20Samyra"><svg class="i"><use href="#i-mail"/></svg><span data-fr="M'envoyer un email">Send me an email</span></a>
+    <a class="btn" href="https://www.linkedin.com/in/ouedraogo-ami-samyra/" target="_blank" rel="noopener noreferrer"><svg class="i"><use href="#i-in"/></svg>LinkedIn</a>
+    <a class="btn" href="#feedback"><svg class="i"><use href="#i-chat"/></svg><span data-fr="Avis anonyme">Anonymous feedback</span></a>
+  </div>
+</div>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Ami Samyra Ouedraogo</span><span class="privacy-note" data-fr="Visites comptées de façon anonyme, sans cookies (GoatCounter).">Visits are counted anonymously, without cookies (GoatCounter).</span><span data-fr="Fait main. Hébergé sur GitHub Pages.">Hand-built. Hosted on GitHub Pages.</span></div></footer>
+
+<script src="assets/site.js"></script>
 </body>
-<script src="scripts/main.js"></script>
 </html>

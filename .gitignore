@@ -1,0 +1,9 @@
+# Working notes: kept on this computer, never published on GitHub Pages.
+PROJECT_BRIEF.md
+DEPLOY.md
+docs/
+
+# Personal documents must never end up in this folder; these patterns are a safety net.
+*.pdf
+*.jpeg
+*.odp
